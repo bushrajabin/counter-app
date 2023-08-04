@@ -21,7 +21,9 @@ increment.addEventListener('click', increase);
 decrement.addEventListener('click', decrease);
 
 function reset() {
-    let Display = 0;
-    counterValue.textContent = Display;
+    // let Display = 0;
+    // counterValue.textContent = Display;
+    // counterValue.style.color = "white";
+    document.getElementById("Display").value = "";
     counterValue.style.color = "white";
 }
