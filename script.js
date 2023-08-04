@@ -17,11 +17,11 @@ function decrease() {
 }
 
 
-// increment.addEventListener('click', increase);
-// decrement.addEventListener('click', decrease);
+increment.addEventListener('click', increase);
+decrement.addEventListener('click', decrease);
 
-// function reset() {
-//     let Display = 0;
-//     counterValue.textContent = Display;
-//     counterValue.style.color = "white";
-// }
+function reset() {
+    let Display = 0;
+    counterValue.textContent = Display;
+    counterValue.style.color = "white";
+}
