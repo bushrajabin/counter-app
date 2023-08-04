@@ -10,11 +10,11 @@ function increase() {
     counterValue.style.color = "red";
 }
 
-// function decrease() {
-//     count--;
-//     counterValue.innerHTML = count;
-//     counterValue.style.color = "Green";
-// }
+function decrease() {
+    count--;
+    counterValue.innerHTML = count;
+    counterValue.style.color = "Green";
+}
 
 
 // increment.addEventListener('click', increase);
