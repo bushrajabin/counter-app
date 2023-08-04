@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.count{
+   background-color: white;
+   width: 50vw;
+   margin: auto;
+   margin-top: 90px;
+   padding: 90px;
+   text-align: center;
+}
+.count>h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btns{
+    margin: 70px;
+    padding: 10px;
+}
+
+#btn1,#btn2,#btn3{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
