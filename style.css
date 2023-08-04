@@ -4,16 +4,23 @@ body{
 }
 
 .count{
-   background-color: white;
-   width: 50vw;
+   background-color: rgb(156, 152, 152);
+   width: 70vw;
    margin: auto;
-   margin-top: 90px;
-   padding: 90px;
+   margin-top: 20px;
+   padding: 70px;
    text-align: center;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .count>h1{
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: navy;
+}
+
+#Display{
+    font-size: 100px;
+    color: green;
 }
 
 .btns{
@@ -24,8 +31,16 @@ body{
 #btn1,#btn2,#btn3{
     background-color: white;
     margin: 20px;
-    padding: 10px;
-    border: 2px solid black;
+    padding: 20px;
     border-radius: 10px;
     font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#btn1:hover,#btn2:hover,#btn3:hover{
+    background-color: lightblue;
+    border-radius: 30px;
 }
