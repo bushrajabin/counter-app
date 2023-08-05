@@ -1,20 +1,15 @@
-let increment = document.getElementById("btn3");
-let decrement = document.getElementById("btn1")
 let counterValue = document.getElementById("Display");
 
 let count = 0;
 function increase() {
     count = ++count;
     counterValue.innerHTML = count;
-    counterValue.style.color = "red";
     document.getElementById('btn1').disabled = false;
-    updateCountDisplay()
-}
-
-
-
-function updateCountDisplay() {
-    document.getElementById('Display').innerHTML = count;
+    if (count % 2 != 0) {
+        counterValue.style.color = "Green"
+    } else {
+        counterValue.style.color = "yellow";
+    }
 }
 
 function decrease() {
@@ -22,16 +17,18 @@ function decrease() {
         count -= 1;
         document.getElementById("Display").innerHTML = count;
     }
-
     else {
         document.getElementById("btn1").disabled = true;
     }
+    if (count % 2 != 0) {
+        counterValue.style.color = "Green"
+    } else {
+        counterValue.style.color = "yellow";
+    }
 }
-
 function reset() {
     count = 0;
-    updateCountDisplay()
+    document.getElementById('Display').innerHTML = count;
 }
 
-updateCountDisplay()
 
