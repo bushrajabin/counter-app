@@ -22,8 +22,8 @@ function decrease() {
 }
 
 
-increment.addEventListener('click', increase);
-decrement.addEventListener('click', decrease);
+// increment.addEventListener('click', increase);
+// decrement.addEventListener('click', decrease);
 
 function reset() {
 var a=0;
