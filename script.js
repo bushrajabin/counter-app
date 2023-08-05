@@ -2,17 +2,19 @@ let increment = document.getElementById("btn3");
 let decrement = document.getElementById("btn1")
 let counterValue = document.getElementById("Display");
 
-
-let count = 1;
+let count = 0;
 function increase() {
-    console.log(count)
-
-    count = count + 1
+    count = ++count;
     counterValue.innerHTML = count;
     counterValue.style.color = "red";
-
-
     document.getElementById('btn1').disabled = false;
+    updateCountDisplay()
+}
+
+
+
+function updateCountDisplay() {
+    document.getElementById('Display').innerHTML = count;
 }
 
 function decrease() {
@@ -24,19 +26,12 @@ function decrease() {
     else {
         document.getElementById("btn1").disabled = true;
     }
-
-
-
-
 }
-
-
-// increment.addEventListener('click', increase);
-// decrement.addEventListener('click', decrease);
 
 function reset() {
-    var a = 0;
-    document.getElementById("Display").innerHTML = a;
-
+    count = 0;
+    updateCountDisplay()
 }
+
+updateCountDisplay()
 
